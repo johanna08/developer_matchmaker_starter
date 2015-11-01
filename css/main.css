@@ -1,0 +1,42 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+/*header styles */
+.page-header {
+	background-color: black;
+	color: white;
+	border-bottom: 4px solid yellow;
+	padding: 0 3%;
+	max-width: 1280px;
+	line-height: 1;
+	margin: auto;
+}
+.page-header__content {
+
+}
+h1 {
+	font-size: 2rem;
+	line-height: 1;
+	float: left;
+	color: yellow;
+	font-family: 'Merriweather'; serif;
+	margin: 20px;
+}
+nav {
+	float: right;
+}
+li {
+	float: left;
+
+}
+a:link {
+	text-decoration: none;
+}
+
+ 
+
+
+
+
