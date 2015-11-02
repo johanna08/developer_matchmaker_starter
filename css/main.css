@@ -57,5 +57,9 @@ li {
 .button__columns {
 	background-color: #C6C6C6;
 }
-
+.page-footer {
+	background-color: black;
+	color: white;
+	border-bottom: 4px solid yellow;
+	max-width: 1280px;
 
