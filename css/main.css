@@ -1,28 +1,22 @@
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
-	line-height: 1.5;
+	text-decoration: none;
 }
 /*header styles */
 .page-header {
 	background-color: black;
 	color: white;
 	border-bottom: 4px solid yellow;
-	padding: 0 3%;
 	max-width: 1280px;
-	line-height: 1;
-	margin: auto;
 }
-.page-header__content {
 
-}
 h1 {
 	font-size: 2rem;
-	line-height: 1;
 	float: left;
 	color: yellow;
-	font-family: 'Merriweather'; serif;
-	margin: 20px;
+	font-family: 'Merriweather', serif;
+	padding: 20px;
 }
 nav {
 	float: right;
@@ -34,9 +28,37 @@ li {
 a:link {
 	text-decoration: none;
 }
-
+.tagline {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-size: 1rem;
+	font-style: italic;
+	background: #C6C6C6;
+	border-top: 1px solid #AAA;
+}
+.banner {
+	background: url (../images/coworking.jpg) center center no-repeat;
+	background-size: cover;
+}
+.title {
+	font-family: 'Merriweather', serif;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
  
-
-
+.button {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	background: yellow;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 12px;
+	border-radius: 5px;
+}
+.column .button {
+	background-color: #C6C6C6;
+}
 
 
