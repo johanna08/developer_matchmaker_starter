@@ -11,12 +11,21 @@ body {
 	max-width: 1280px;
 }
 
-h1 {
+.title {
+	font-family: 'Merriweather', serif;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.title__header {
 	font-size: 2rem;
 	float: left;
 	color: yellow;
 	font-family: 'Merriweather', serif;
 	padding: 20px;
+}
+a:link {
+	text-decoration: none;
 }
 nav {
 	float: right;
@@ -37,11 +46,6 @@ li {
 	background: url (../images/coworking.jpg) center center no-repeat;
 	background-size: cover;
 }
-.title {
-	font-family: 'Merriweather', serif;
-	font-size: 1.25rem;
-	font-weight: bold;
-}
  
 .button {
 	font-family: 'Oswald', sans-serif;
@@ -57,5 +61,8 @@ li {
 .button__columns {
 	background-color: #C6C6C6;
 }
-
+.page-footer {
+	background-color: black;
+	color: white;
+	max-width: 1280px;
 
