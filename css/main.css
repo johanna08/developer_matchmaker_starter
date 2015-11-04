@@ -1,36 +1,57 @@
-body {
-	font-family: 'Source Sans Pro', sans-serif;
+html {
 	font-size: 20px;
 }
 /*header styles */
 .page-header {
 	background-color: black;
 	color: white;
+	font-family: 'Merriweather', serif;
 	border-bottom: 4px solid yellow;
 	max-width: 1280px;
+	display:block;
+	color: white;
+	font-size: 1rem;
 }
 
 .title {
-	font-family: 'Merriweather', serif;
-	font-size: 1.25rem;
-	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
 .title__header {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	float: left;
 	color: yellow;
 	font-family: 'Merriweather', serif;
 	padding: 20px;
-}
-a:link {
 	text-decoration: none;
 }
-nav {
-	float: right;
+.title__header--column {
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: 'Merriweather', serif;
 }
-li {
+
+.nav {
+	float: right;
+	color: white;
+	padding: 10px;
+	display: inline-block;
+	font-family: 'Merriweather', serif;
+	text-decoration: none;
+}
+
+.nav__button {
 	float: left;
+	display: inline-block;
+}
+.nav__button:hover {
+	background-color: yellow;
+}
+.nav__button--diff {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
 }
 
 .tagline {
@@ -40,10 +61,16 @@ li {
 	font-style: italic;
 	background: #C6C6C6;
 	border-top: 1px solid #AAA;
+	max-width: 1280px;
 }
 .banner {
 	background: url (../images/coworking.jpg) center center no-repeat;
 	background-size: cover;
+}
+
+.column-text {
+	font-family: 'Merriweather', serif;
+	color: black;
 }
  
 .button {
@@ -56,16 +83,22 @@ li {
 	text-align: center;
 	padding: 12px;
 	border-radius: 5px;
+	text-transform: uppercase;
 }
+
 .button__columns {
 	background-color: #C6C6C6;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
 }
 .page-footer {
 	background-color: black;
 	color: white;
 	max-width: 1280px;
-<<<<<<< HEAD
-
-=======
+	font-family: 'Merriweather', serif;
+	font-size: 1rem;
+	line-height: 5rem;
 }
->>>>>>> 6d9d50bb3c1da6081532a1267fb1f903ca01abb6
