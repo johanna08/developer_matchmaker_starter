@@ -6,9 +6,8 @@ html {
 	background-color: black;
 	color: white;
 	border-bottom: 4px solid yellow;
-	max-width: 1280px;
+	padding: 0;
 	display:block;
-	color: white;
 	line-height: 4rem;
 	font-size: 1rem;
 }
@@ -44,7 +43,6 @@ html {
 }
 
 .nav__button {
-	float: left;
 	display: inline-block;
 }
 .nav__button:hover {
@@ -64,15 +62,32 @@ html {
 	border-top: 1px solid #AAA;
 	max-width: 1280px;
 	line-height: 1.25rem;
+	margin: 0;
+	padding: 1rem;
+}
+
+.tagline del {
+	color: #999;
+}
+.tagline ins {
+	text-decoration: none;
+	border-bottom: 1.5px solid yellow;
 }
 .banner {
 	background: url (../images/coworking.jpg) center center no-repeat;
 	background-size: cover;
 }
-
+.column {
+	width: 300px;
+	height: 500px;
+	box-sizing: border-box;
+	display: block;
+}
 .column-text {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: black;
+	display: block;
+	float: center;
 }
  
 .button {
