@@ -1,15 +1,14 @@
 html {
+	margin: 0;
+	padding: 0;
 	font-size: 20px;
 }
 /*header styles */
 .page-header {
-	background-color: black;
-	color: white;
-	border-bottom: 4px solid yellow;
-	padding: 0;
-	display:block;
-	line-height: 4rem;
-	font-size: 1rem;
+	background: black;
+    color: white;
+    overflow: hidden;
+    border-bottom: 4px solid yellow;
 }
 
 .title {
@@ -19,12 +18,14 @@ html {
 }
 
 .title__header {
+	line-height: 2rem;
 	font-size: 1.5rem;
 	float: left;
 	color: yellow;
 	font-family: 'Merriweather', serif;
-	padding: 20px;
 	text-decoration: none;
+	display: inline-block;
+	padding: 20px;
 }
 .title__header--column {
 	font-size: 1.25rem;
@@ -33,10 +34,7 @@ html {
 }
 
 .nav {
-	float: right;
 	color: white;
-	padding: 10px;
-	display: inline-block;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-decoration: none;
 	font-size: 1rem;
@@ -46,11 +44,12 @@ html {
 	display: inline-block;
 }
 .nav__button:hover {
-	background-color: yellow;
+	color: yellow;
 }
 .nav__button--diff {
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .tagline {
@@ -71,7 +70,7 @@ html {
 }
 .tagline ins {
 	text-decoration: none;
-	border-bottom: 1.5px solid yellow;
+	border-bottom: 2px solid yellow;
 }
 .banner {
 	background: url (../images/coworking.jpg) center center no-repeat;
