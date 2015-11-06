@@ -26,26 +26,38 @@ html {
 	text-decoration: none;
 	display: inline-block;
 	padding: 20px;
-}
+} 
 .title__header--column {
 	font-size: 1.25rem;
 	font-weight: 600;
 	font-family: 'Merriweather', serif;
 }
+ /*ul {
+ 	display: flex;
+ }*/
 
 .nav {
 	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-decoration: none;
 	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	/*flex-direction: row;
+	/*justify-content: space-around;*/
 }
 
 .nav__button {
-	display: inline-block;
+
+	/*padding: 20px;
+	line-height: 2rem;
+	/*text-align: right;*/
 }
+
 .nav__button:hover {
 	color: yellow;
 }
+
 .nav__button--diff {
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
@@ -73,6 +85,8 @@ html {
 	border-bottom: 2px solid yellow;
 }
 .banner {
+	max-width: 1280px;
+	height: 10rem;
 	background: url (../images/coworking.jpg) center center no-repeat;
 	background-size: cover;
 }
