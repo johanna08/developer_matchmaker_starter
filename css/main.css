@@ -83,19 +83,22 @@ html {
 	text-decoration: none;
 	border-bottom: 2px solid yellow;
 }
-.banner {
+section {
 	max-width: 1280px;
-	min-height: 100%;
+	height: ;
 	background: url (../images/coworking.jpg) center center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 }
-.banner .title {
-	margin-right: 5rem;
+
+.banner {
+	width: 30rem;
+	height: 20rem;
 	float: right;
+	background: rgba(255,255,255,.8);
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
 }
-.banner .column-text {
-	float: right;
+
 }
 .column {
 	width: 300px;
