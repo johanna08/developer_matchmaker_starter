@@ -1,3 +1,4 @@
+
 html {
 	margin: 0;
 	padding: 0;
@@ -42,16 +43,14 @@ html {
 	text-decoration: none;
 	font-size: 1rem;
 	display: flex;
-	justify-content: center;
 	/*flex-direction: row;
-	/*justify-content: space-around;*/
+	flex-wrap: wrap;*/
 }
 
 .nav__button {
 
-	/*padding: 20px;
-	line-height: 2rem;
-	/*text-align: right;*/
+	display: flex;
+	flex-direction: row;
 }
 
 .nav__button:hover {
@@ -86,20 +85,28 @@ html {
 }
 .banner {
 	max-width: 1280px;
-	height: 10rem;
+	min-height: 100%;
 	background: url (../images/coworking.jpg) center center no-repeat;
 	background-size: cover;
+	overflow: hidden;
+}
+.banner .title {
+	margin-right: 5rem;
+	float: right;
+}
+.banner .column-text {
+	float: right;
 }
 .column {
 	width: 300px;
 	height: 500px;
 	box-sizing: border-box;
-	display: block;
+	display: ;
 }
 .column-text {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: black;
-	display: block;
+	display: flex;
 	float: center;
 }
  
