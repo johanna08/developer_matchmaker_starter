@@ -20,7 +20,7 @@ html {
 }
 
 .title__header {
-	line-height: 1.5rem;
+	line-height: 1.25rem;
 	font-size: 1.5rem;
 	color: yellow;
 	font-family: 'Merriweather', serif;
@@ -37,9 +37,9 @@ html {
 }
 
 .nav__container {
-	line-height: 1.5rem;
-	width: 28rem;
-	border: 1px solid white;
+	line-height: 1.25rem;
+	width: 30rem;
+	/*border: 1px solid white;*/
 	float: right;
 	padding: .5rem;
 }
@@ -57,7 +57,7 @@ html {
 	font-size: 1rem;
 	display: inline-block;
 	float: left;
-	padding: .5rem;
+	padding: .75rem;
 }
 .nav__button:hover {
 	color: yellow;
@@ -91,7 +91,7 @@ html {
 }
 section {
 	max-width: 1280px;
-	height: 25rem;
+	height: 5rem;
 	background: url (../images/coworking.jpg) center center no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -101,10 +101,11 @@ section {
 
 .banner {
 	width: 20rem;
+	height: 5rem;
 	/*float: right;*/
 	background: rgba(255,255,255,.8);
 	padding: 1rem;
-	box-sizing: border-box;
+	border: 1px solid black;
 	float: right;
 	clear: right;
 }
