@@ -1,33 +1,38 @@
-
 html {
 	margin: 0;
 	padding: 0;
-	font-size: 20px;
 }
 /*header styles */
-.container {
-	background: black;
-    color: white;
-    overflow: hidden;
-    border-bottom: 4px solid yellow;
-    width: 100%;
+.row {
+	width: 100%;
+	box-sizing: border-box;
 }
 
-.title {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.5rem;
-	font-weight: 700;
+.row__container {
+	width: 100%;
+	margin: 0 auto;
+	min-height: 50px;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	flex-flow: row wrap;
+
+	/*erase blue border after*/
+	border: 2px solid blue;
 }
 
 .title__header {
-	line-height: 1.25rem;
-	font-size: 1.5rem;
+	min-width: 400px;
+	/*width: 40%; trying flex-grow*/
+	background-color: black;
 	color: yellow;
+	font-size: 30px;
 	font-family: 'Merriweather', serif;
 	text-decoration: none;
-	padding: 1rem;
-	float: left;
-	padding-right: .75rem;
+	padding: 20px;
+
+	border: 1px solid red;
+
 } 
 
 .title__header--column {
@@ -37,27 +42,25 @@ html {
 }
 
 .nav__container {
-	line-height: 1.25rem;
-	width: 30rem;
-	/*border: 1px solid white;*/
-	float: right;
-	padding: .5rem;
-}
-
-.clearfix:after {
-	content: “ “
-	display: block
-	clear: both
+	min-width: 400px;
+	background-color: black;
+	flex-grow: 2;
+	padding: 20px;
+	border: 1px solid red;
+	justify-content: flex-end;
+	
 }
 
 .nav__button {
 	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 20px;
 	display: inline-block;
-	float: left;
-	padding: .75rem;
+	/*float: left;
+	align-content: flex-end;*/
+	padding: 5px;
+	/*padding-top: 10px;*/
 }
 .nav__button:hover {
 	color: yellow;
@@ -71,15 +74,11 @@ html {
 
 .tagline {
 	font-family: 'Merriweather', serif;
-	text-align: center;
-	font-size: 1.25rem;
+	font-size: 25px;
 	font-style: italic;
 	background: #C6C6C6;
 	border-top: 1px solid #AAA;
-	max-width: 1280px;
-	line-height: 1.25rem;
 	margin: 0;
-	padding: 1rem;
 }
 
 .tagline del {
@@ -89,40 +88,40 @@ html {
 	text-decoration: none;
 	border-bottom: 3px solid yellow;
 }
-section {
-	max-width: 1280px;
-	height: 5rem;
+.bannerbox {
 	background: url (../images/coworking.jpg) center center no-repeat;
 	background-size: cover;
-	overflow: hidden;
+	background-position: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
 
-.banner {
-	width: 20rem;
-	height: 5rem;
-	/*float: right;*/
-	background: rgba(255,255,255,.8);
-	padding: 1rem;
+.banner__box {
 	border: 1px solid black;
-	float: right;
-	clear: right;
-}
+	color: rgba(255,255,255,.8);
 
 }
+
+.title__bannerbox {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	border: 1px solid red;
+}
+
 .column {
 	padding: 2rem;
-	width: 300px;
-	height: 500px;
+	width: 1000px;
+	/*height: 500px;*/
 	box-sizing: border-box;
 	display: flex;
+
 }
 .column-text {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: black;
-	align-content: cen;
-	float: center;
 }
  
 .button {
@@ -153,4 +152,9 @@ section {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1rem;
 	line-height: 4rem;
+}
+/*.clearfix:after {
+	content: “ “
+	display: block
+	clear: both
 }
