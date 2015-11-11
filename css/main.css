@@ -2,6 +2,7 @@ html {
 	margin: 0;
 	padding: 0;
 }
+
 /*header styles */
 .row {
 	width: 100%;
@@ -10,19 +11,46 @@ html {
 
 .row__container {
 	width: 100%;
+	min-width: 1175px;
 	margin: 0 auto;
 	min-height: 50px;
 	display: flex;
 	box-sizing: border-box;
-	justify-content: center;
+	padding: 3%;
 	flex-flow: row wrap;
 
 	/*erase blue border after*/
 	border: 2px solid blue;
 }
 
+.row--header {
+	background: black;
+}
+
+.row--tagline {
+	display: block;
+	text-align: center;	
+	background: #C6C6C6;
+	min-height: 60px;
+}
+
+.row__container--header {
+	width: 100%;
+	/*min-width: 960px;*/
+	margin: 0 auto;
+	/*min-height: 50px;*/
+	box-sizing: border-box;
+	/*padding: 3%;*/
+	flex-flow: row wrap;
+	display: inline-flex;
+	/*justify-content: space-around;*/
+	border-bottom: 3px solid yellow;
+
+	border: 2px solid green;
+
+}
 .title__header {
-	min-width: 400px;
+	min-width: 300px;
 	/*width: 40%; trying flex-grow*/
 	background-color: black;
 	color: yellow;
@@ -30,8 +58,9 @@ html {
 	font-family: 'Merriweather', serif;
 	text-decoration: none;
 	padding: 20px;
+	margin-right: auto;
 
-	border: 1px solid red;
+	border: 2px solid red;
 
 } 
 
@@ -42,13 +71,12 @@ html {
 }
 
 .nav__container {
-	min-width: 400px;
+	min-width: 600px;
 	background-color: black;
-	flex-grow: 2;
 	padding: 20px;
-	border: 1px solid red;
-	justify-content: flex-end;
-	
+	margin-left: auto;
+
+	border: 1px solid red;	
 }
 
 .nav__button {
@@ -56,12 +84,9 @@ html {
 	font-family: 'Source Sans Pro', sans-serif;
 	text-decoration: none;
 	font-size: 20px;
-	display: inline-block;
-	/*float: left;
-	align-content: flex-end;*/
 	padding: 5px;
-	/*padding-top: 10px;*/
 }
+
 .nav__button:hover {
 	color: yellow;
 }
@@ -79,6 +104,9 @@ html {
 	background: #C6C6C6;
 	border-top: 1px solid #AAA;
 	margin: 0;
+	padding: 20px;
+
+	justify-content: center;
 }
 
 .tagline del {
@@ -89,39 +117,58 @@ html {
 	border-bottom: 3px solid yellow;
 }
 .bannerbox {
-	background: url (../images/coworking.jpg) center center no-repeat;
+	background-image: url('../images/coworking.jpg');
 	background-size: cover;
 	background-position: center;
 	padding-top: 3%;
 	padding-bottom: 3%;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+	/*display: block;*/
 }
 
 .banner__box {
 	border: 1px solid black;
-	color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,.8);
+	padding: 30px;
+	width: 300px;
+	align-self: flex-end;
+	flex-direction: column;
+	min-height: 100px;
+	box-sizing: border-box;
+	display: flex;
+}
 
+.row__container--bannerbox {
+	justify-content: flex-end;
 }
 
 .title__bannerbox {
+	color: black;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.5rem;
+	font-size: 25px;
 	font-weight: 700;
-	border: 1px solid red;
+	flex-flow: wrap;
+	align-self: center;
 }
 
 .column {
 	padding: 2rem;
-	width: 1000px;
+	min-width: 1175px;
 	/*height: 500px;*/
-	box-sizing: border-box;
 	display: flex;
+
+	box-sizing: border-box;
+	/*flex-flow: row;*/
+	flex-direction: column;
 
 }
 .column-text {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: black;
+	align-self: center;
+	font-size: 20px;
+	padding: 5px;
 }
  
 .button {
@@ -130,11 +177,12 @@ html {
 	font-weight: bold;
 	background: yellow;
 	color: black;
-	display: block;
+	/*display: block;*/
 	text-align: center;
 	padding: 12px;
 	border-radius: 5px;
 	text-transform: uppercase;
+	align-self: center;
 }
 
 .button__columns {
@@ -142,18 +190,18 @@ html {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
-	text-align: center;
+	flex-direction: column;
+	align-items: flex-stretch;
 	font-family: 'Oswald', sans-serif;
 }
 .page-footer {
 	background-color: black;
 	color: white;
-	max-width: 1280px;
+	min-width: 1175px;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1rem;
-	line-height: 4rem;
+	font-size: 20px;
 }
-/*.clearfix:after {
+.clearfix:after {
 	content: “ “
 	display: block
 	clear: both

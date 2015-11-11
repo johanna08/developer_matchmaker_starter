@@ -9,8 +9,8 @@
 	
 </head>
 <body>
-	<header class="row">
-			<div class="row__container">
+	<header class="row row--header">
+			<div class="row__container--header">
 				<h1 class="title__header" href="index.html">Startup Matchmaker</h1>
 			<nav class="nav__container">
 				<a class="nav__button nav__button--diff" href="developers.html">Developers</a>
@@ -20,15 +20,18 @@
 				<a class="nav__button"href="blog.html">Blog</a></nav>
 			</div>
 	</header>
-	<section class="row">
-	<div class="row__container tagline">Because two brains <del>taste</del> <ins>are</ins> better than one.
+	<section class="row--tagline">
+	<div class="tagline">Because two brains <del>taste</del> <ins>are</ins> better than one.
 	</div>
 	</section>
 	<section class="row bannerbox">	
-		<div class="row__container banner__box">
+		<div class="row__container row__container--bannerbox">
+		<article class="banner__box">
 		<h2 class="title__bannerbox">Meet your Match!</h2>
 		<p class="column-text">Have a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the best place for designers and developers to find each other.</p>
-		<a class="button" href="#">CREATE A PROFILE</a></div>
+		<a class="button" href="#">CREATE A PROFILE</a>
+		</article>
+		</div>
 	</section>
 	<row class="row">
 		<div class="row__container column">
@@ -43,8 +46,8 @@
 			<a class="button button__columns" href="#">Start Your Search</a>
 		</div>
 		</row>
-	<footer>
-	<div class="page-footer">© 2013 Startup Matchmaker. Made in NY.</div>
+	<footer class="row">
+	<div class="row__container page-footer">© 2013 Startup Matchmaker. Made in NY.</div>
 	</footer>
 	
 </body>
