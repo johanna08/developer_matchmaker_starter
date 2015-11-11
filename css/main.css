@@ -23,7 +23,7 @@ html {
 	border: 2px solid blue;
 }
 
-.row--header {
+.row__header {
 	background: black;
 }
 
@@ -36,31 +36,33 @@ html {
 
 .row__container--header {
 	width: 100%;
-	/*min-width: 960px;*/
-	margin: 0 auto;
-	/*min-height: 50px;*/
+	max-height: 20px;
 	box-sizing: border-box;
-	/*padding: 3%;*/
+	padding: 0%
 	flex-flow: row wrap;
-	display: inline-flex;
-	/*justify-content: space-around;*/
+	display: flex;
+	justify-content: space-around;
 	border-bottom: 3px solid yellow;
 
-	border: 2px solid green;
+	/*border: 2px solid green;
+	/*flex-basis: inherit;*/
 
 }
 .title__header {
 	min-width: 300px;
-	/*width: 40%; trying flex-grow*/
+	/*max-height: 50px;*/
 	background-color: black;
 	color: yellow;
 	font-size: 30px;
 	font-family: 'Merriweather', serif;
 	text-decoration: none;
-	padding: 20px;
+	/*padding: 20px;
+	/*flex-basis: inherit;*/
+	flex-direction: row wrap;
+	align-self: center;
 	margin-right: auto;
 
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 
 } 
 
@@ -73,10 +75,12 @@ html {
 }
 
 .nav__container {
-	min-width: 600px;
+	min-width: 450px;
 	background-color: black;
-	padding: 20px;
+	/*padding: 20px;*/
+	align-self: center;
 	margin-left: auto;
+	flex-direction: row-wrap;
 
 	border: 1px solid red;	
 }
@@ -86,7 +90,7 @@ html {
 	font-family: 'Source Sans Pro', sans-serif;
 	text-decoration: none;
 	font-size: 20px;
-	padding: 5px;
+	padding: 10px;
 }
 
 .nav__button:hover {
@@ -155,10 +159,12 @@ html {
 }
 
 .column {
-	padding: 2rem;
+	padding: 20px;
 	min-width: 1175px;
-	/*height: 500px;*/
+	min-height: 100px
 	display: flex;
+	justify-content: center;
+
 
 	box-sizing: border-box;
 	flex-flow: row wrap;
@@ -166,9 +172,12 @@ html {
 }
 
 .column__box {
+	padding: 30px;
+	width: 300px;
 	display: flex;
 	flex-direction: column;
 	max-width: 33%;
+	border-sizing: border-box;
 
 	border: 1px solid red;
 }
