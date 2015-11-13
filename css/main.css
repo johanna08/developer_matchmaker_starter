@@ -19,7 +19,7 @@ html {
 	flex-flow: row wrap;
 
 	/*erase blue border after*/
-	border: 2px solid blue;
+	/*border: 2px solid blue;*/
 }
 
 @media all and ( max-width: 600px ) {
@@ -61,7 +61,6 @@ html {
 	font-size: 30px;
 	font-family: 'Merriweather', serif;
 	text-decoration: none;
-	flex-direction: row wrap;
 	align-self: center;
 	margin-right: auto;
 
@@ -82,9 +81,8 @@ html {
 	background-color: black;
 	align-self: center;
 	margin-left: auto;
-	flex-direction: row-wrap;
 
-	border: 1px solid red;	
+	/*border: 1px solid red;*/	
 }
 
 .nav__button {
@@ -174,14 +172,6 @@ html {
 	flex-flow: row wrap;
 }
 
-@media all and ( min-width: 400px ) {
-		.column {
-			display: flex;
-			flex-flow: column wrap;
-		}
-	}
-
-
 .column__box {
 	height: 200px;
 	display: flex;
@@ -191,16 +181,16 @@ html {
 	border-right: 1px solid gray;
 	justify-content: center;
 
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
-/*@media all and ( min-width: 400px ) {
+@media all and ( min-width: 400px ) {
 		.column__box {
-			max-width: 100%;
-			display: flex;
-		}
-	}*/
+			flex-direction: row wrap;
+			min-width: 400px;
 
+	}
+}
 
 .column__box--end {
 	border-right: none;
